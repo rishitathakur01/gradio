@@ -1,0 +1,12 @@
+import gradio as gr
+
+def chatbot(message):
+    return "Finance Bot: " + message
+
+demo = gr.Interface(
+    fn=chatbot,
+    inputs="text",
+    outputs="text"
+)
+
+demo.launch()
