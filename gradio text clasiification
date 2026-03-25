@@ -1,0 +1,23 @@
+import gradio as gr
+from transformers import pipeline
+
+# Load sentiment analysis model
+classifier = pipeline("sentiment-analysis")
+
+def classify_text(text):
+    result = classifier(text)[0]
+    label = result['label']
+    score = result['score']
+    
+    return f"{label} (confidence: {score:.2f})"
+
+# Gradio UI
+interface = gr.Interface(
+    fn=classify_text,
+    inputs=gr.Textbox(lines=4, placeholder="Type your text..."),
+    outputs="text",
+    title="AI Text Sentiment Classifier",
+    description="Uses Hugging Face model for sentiment analysis"
+)
+
+interface.launch()
