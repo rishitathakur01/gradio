@@ -1,0 +1,15 @@
+import gradio as gr
+from transformers import pipeline
+
+classifier = pipeline("image-classification")
+
+def classify_image(image):
+    result = classifier(image)
+    return result[0]['label']
+
+gr.Interface(
+    fn=classify_image,
+    inputs=gr.Image(type="pil"),
+    outputs="text",
+    title="Image Classifier"
+).launch()
