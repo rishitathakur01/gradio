@@ -1,0 +1,14 @@
+import gradio as gr
+from transformers import pipeline
+
+translator = pipeline("translation_en_to_fr")
+
+def translate(text):
+    return translator(text)[0]['translation_text']
+
+gr.Interface(
+    fn=translate,
+    inputs="text",
+    outputs="text",
+    title="English → French Translator"
+).launch()
