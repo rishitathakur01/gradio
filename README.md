@@ -23,3 +23,16 @@ Sentiment analysis
 Spam detection
 News categorization
 Customer feedback analysis
+
+3. 🖼️ Image Classifier
+
+An image classification project.
+
+It takes an image and predicts what it contains.
+
+For example:
+
+Upload → 🐱 cat image
+Prediction → Cat
+
+This demonstrates concepts from Computer Vision + Machine Learning/Deep Learning.
