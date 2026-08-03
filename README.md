@@ -36,3 +36,13 @@ Upload → 🐱 cat image
 Prediction → Cat
 
 This demonstrates concepts from Computer Vision + Machine Learning/Deep Learning.
+4. 🌐 Language Translator
+
+A project that converts text from one language to another.
+
+For example:
+
+English: “How are you?”
+Hindi: “आप कैसे हैं?”
+
+This comes under Natural Language Processing (NLP) and can involve translation models/APIs.
