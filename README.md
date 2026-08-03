@@ -57,3 +57,4 @@ Input: A 5-paragraph article
 Output: 3–4 sentences summarizing the main points.
 
 This is another NLP / Generative AI type of project.
+--------------------------------------------------------------------------------------------------------------------------------------------------
