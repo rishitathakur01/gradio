@@ -58,3 +58,4 @@ Output: 3–4 sentences summarizing the main points.
 
 This is another NLP / Generative AI type of project.
 --------------------------------------------------------------------------------------------------------------------------------------------------
+AI/ML Mini Projects: Developed multiple Python-based AI applications including text classification, image classification, language translation, and text summarization, with interactive interfaces using Gradio.
