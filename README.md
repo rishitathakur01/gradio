@@ -46,3 +46,14 @@ English: “How are you?”
 Hindi: “आप कैसे हैं?”
 
 This comes under Natural Language Processing (NLP) and can involve translation models/APIs.
+5. 📄 Text Summarizer
+
+A project that takes a long piece of text and produces a shorter summary containing the important information.
+
+For example:
+
+Input: A 5-paragraph article
+⬇️
+Output: 3–4 sentences summarizing the main points.
+
+This is another NLP / Generative AI type of project.
