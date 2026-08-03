@@ -6,3 +6,20 @@ Connects Python code to a simple UI
 Lets users interact with your model through a webpage
 Good introduction to deploying AI models
 Useful skill for AI/ML projects
+2. 📝 Gradio Text Classification
+
+A text classification project.
+
+It takes text as input and predicts which category it belongs to.
+
+For example:
+
+Input: “I absolutely loved this movie!”
+Output: Positive
+
+Possible uses:
+
+Sentiment analysis
+Spam detection
+News categorization
+Customer feedback analysis
