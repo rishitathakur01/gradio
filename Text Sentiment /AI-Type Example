@@ -1,0 +1,13 @@
+import gradio as gr
+
+def sentiment(text):
+    if "good" in text.lower() or "great" in text.lower():
+        return "Positive 😊"
+    else:
+        return "Negative/Neutral 😐"
+
+gr.Interface(
+    fn=sentiment,
+    inputs="text",
+    outputs="text"
+).launch()
