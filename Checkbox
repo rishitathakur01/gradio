@@ -1,0 +1,12 @@
+import gradio as gr
+
+def check(value):
+    if value:
+        return "You selected it!"
+    return "You did not select it."
+
+gr.Interface(
+    fn=check,
+    inputs=gr.Checkbox(label="Select me"),
+    outputs="text"
+).launch()
