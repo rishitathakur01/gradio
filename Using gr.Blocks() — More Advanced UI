@@ -1,0 +1,19 @@
+import gradio as gr
+
+def greet(name):
+    return f"Hello, {name}!"
+
+with gr.Blocks() as demo:
+    gr.Markdown("# My Gradio App")
+
+    name = gr.Textbox(label="Enter your name")
+    button = gr.Button("Submit")
+    output = gr.Textbox(label="Output")
+
+    button.click(
+        fn=greet,
+        inputs=name,
+        outputs=output
+    )
+
+demo.launch()
