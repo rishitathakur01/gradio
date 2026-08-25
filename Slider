@@ -1,0 +1,10 @@
+import gradio as gr
+
+def multiply(x):
+    return x * 10
+
+gr.Interface(
+    fn=multiply,
+    inputs=gr.Slider(0, 100, value=10),
+    outputs="number"
+).launch()
