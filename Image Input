@@ -1,0 +1,10 @@
+import gradio as gr
+
+def image_info(image):
+    return image
+
+gr.Interface(
+    fn=image_info,
+    inputs=gr.Image(),
+    outputs=gr.Image()
+).launch()
