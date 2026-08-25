@@ -1,0 +1,10 @@
+import gradio as gr
+
+def choice(x):
+    return f"You chose: {x}"
+
+gr.Interface(
+    fn=choice,
+    inputs=gr.Radio(["AI", "ML", "Data Science"]),
+    outputs="text"
+).launch()
